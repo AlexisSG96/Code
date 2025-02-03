@@ -1,0 +1,14 @@
+struct { int a; int b; } v; // v is a variable of type anonymous struct
+
+struct x { int a; int b; }; // Define a struct tagged x
+struct x v; // v is a variable of type struct x
+
+typedef struct { int a; int b; } y; // Anonymous struct aliased to type y;
+y v; // v is a variable of type anonymous struct aliased to type y
+
+typdef struct x { int a; int b; } y; // struct tagged x is aliased as type y
+struct x v; // as above
+y v; // as above
+Tags and types have different namespaces so you can do the following without a name clash.
+
+typedef struct z { int a; int b; } z;

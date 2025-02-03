@@ -1,0 +1,69 @@
+/*
+1. Bit Manipulation
+Problem: Write a function to check if a number is a power of two.
+Concepts: Bitwise AND, bit shifting.
+Example: Given an integer n, return true if n is a power of two.
+*/
+
+/*
+2. Pointer Arithmetic
+Problem: Implement a function that swaps two integers using pointers.
+Concepts: Pointer dereferencing, passing by reference.
+Example: Write a function swap that takes two integer pointers and swaps their values.
+*/
+
+/*
+3. Embedded Systems Memory Allocation
+Problem: Implement a simple memory pool allocator for a fixed-size memory block.
+Concepts: Memory management, pointers, dynamic memory allocation.
+Example: Create a fixed-size memory pool and implement functions to allocate and free memory.
+*/
+
+/*
+4. Control Flow
+Problem: Write a function that finds the maximum number in an array of integers.
+Concepts: Arrays, iteration, comparison.
+Example: Given an array of integers, return the largest integer in the array.
+*/
+
+/*
+5. Edge Case Handling
+Problem: Write a function to reverse a string in place.
+Concepts: String manipulation, array indexing.
+Example: Given a string, reverse it in place without using additional memory.
+*/
+
+/*
+6. Low-level System Programming
+Problem: Implement a circular buffer using an array and pointers.
+Concepts: Buffer management, circular data structure, pointers.
+Example: Implement a circular buffer with basic operations like enqueue, dequeue, and peek.
+*/
+
+/*
+7. Concurrency (if applicable)
+Problem: Implement a simple semaphore or mutex for synchronization.
+Concepts: Concurrency, synchronization mechanisms.
+Example: Write a simple semaphore or mutex mechanism to control access to shared resources.
+*/
+
+/*
+8. Algorithm Optimization
+Problem: Given a sorted array, write a function that finds the first duplicate element.
+Concepts: Sorting, search algorithms, optimization.
+Example: Given a sorted array, return the first repeated element.
+*/
+
+/*
+9. Embedded Device Interaction
+Problem: Write a function to toggle an LED on an embedded system using GPIO pins.
+Concepts: Embedded systems, hardware control, GPIO pin manipulation.
+Example: Implement a function that toggles the state of an LED connected to a GPIO pin on an embedded board.
+*/
+
+/*
+10. Data Structures
+Problem: Implement a linked list in C and provide functions to insert, delete, and traverse.
+Concepts: Linked lists, dynamic memory management, pointer manipulation.
+Example: Create a linked list structure and write functions for basic operations.
+*/

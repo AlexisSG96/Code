@@ -1,0 +1,95 @@
+Programming Paradigms
+Object-Oriented Programming (OOP)
+"OOP organizes code around objects, which are instances of classes. A class defines properties (attributes) and behaviors (methods). For example, a Car class might have attributes like color and speed and methods like drive() and brake(). The goal is to make code reusable, modular, and easier to maintain."
+Study Tip: Practice identifying where encapsulation, inheritance, and polymorphism are used in libraries or frameworks.
+
+Polymorphism
+"Polymorphism allows methods to do different things based on the context. For instance, in a game, a draw() method can render different shapes (circle, rectangle) based on the object passed to it. This is achieved through method overriding or interfaces in many languages."
+Practical Example: Look at polymorphic behavior in GUI libraries where widgets behave differently but follow a common interface.
+
+Encapsulation
+"This is about protecting data by keeping attributes private and providing public methods to access or modify them. It prevents external code from directly messing with internal states."
+Hands-On: Write a class with private attributes and getter/setter methods to practice.
+
+Abstraction
+"Abstraction hides the complexity of a system by exposing only essential details. For example, when you use a List class, you focus on adding and removing elements, not on how the memory is managed internally."
+Pro Tip: Review abstract classes and interfaces—they’re great examples of abstraction.
+
+Programming Concepts
+Algorithm
+"An algorithm is a step-by-step plan for solving a problem efficiently. For example, sorting algorithms like QuickSort or searching algorithms like Binary Search. Understanding their time and space complexities is crucial."
+Challenge: Implement both iterative and recursive versions of common algorithms.
+
+Data Structure
+"Data structures are ways to organize data for efficient access and modification. Arrays are great for indexed access, linked lists for dynamic memory, and hash maps for fast lookups."
+Focus On: Study how each data structure works under the hood and when to use it.
+
+Big-O Notation
+"Big-O describes the performance of an algorithm as the input grows. For example, a for-loop usually has O(n) complexity, while a nested loop might be O(n²)."
+Actionable: Analyze the complexity of algorithms you write and optimize them.
+
+Recursion
+"Recursion is when a function calls itself to break a problem into smaller pieces, like dividing a list in MergeSort. Every recursive function needs a base case to avoid infinite loops."
+Drill: Practice with Fibonacci numbers, factorials, and tree traversals.
+
+Software Development
+Version Control
+"Version control, like Git, keeps track of code changes, so you can revert to earlier versions or collaborate with teammates without conflicts. Branching and merging are key features."
+Next Step: Practice creating, merging, and resolving conflicts in Git branches.
+
+CI/CD (Continuous Integration/Continuous Deployment)
+"CI/CD automates testing and deployment. When you push code, CI runs tests to catch bugs, and CD deploys updates if everything passes. Tools like Jenkins or GitHub Actions make this seamless."
+Learn: Set up a small CI/CD pipeline for a personal project.
+
+Unit Testing
+"Unit testing involves writing small tests for individual functions or methods to ensure they work as intended. Frameworks like pytest or JUnit make this easier."
+To-Do: Write tests for edge cases and exceptions, not just the happy path.
+
+Networking
+REST
+"REST is an API design style where resources are accessed via HTTP methods like GET, POST, PUT, and DELETE. It’s stateless, meaning each request is independent."
+Practice: Build a simple REST API and interact with it using tools like Postman or curl.
+
+WebSocket
+"WebSockets enable real-time, two-way communication. Unlike REST, it keeps a persistent connection, which is useful for chat apps or live updates."
+Try It: Use WebSocket libraries in a project, like a real-time notification system.
+
+System Design
+Microservices
+"Microservices break a system into smaller, independently deployable services. Each service handles one function, like user management or payment processing. They communicate over APIs."
+Research: Study how big companies like Netflix structure their microservices.
+
+Caching
+"Caching stores frequently accessed data temporarily for faster access. For example, a web app might cache a user’s profile to avoid repeated database queries."
+Tool Up: Implement caching with tools like Redis in a small application.
+
+Embedded Systems
+RTOS
+"A Real-Time Operating System schedules tasks based on their priority, ensuring critical operations (like controlling a drone’s motor) happen on time."
+Experiment: Use an RTOS like FreeRTOS to schedule simple tasks.
+
+ISR (Interrupt Service Routine)
+"ISRs handle hardware interrupts immediately. For example, an ISR might execute when a button is pressed, pausing other tasks."
+Pro Tip: Practice writing ISRs for microcontroller interrupts.
+
+Security
+Encryption
+"Encryption scrambles data so only authorized parties can understand it. Symmetric encryption uses one key, while asymmetric uses a key pair."
+Test: Encrypt and decrypt data using libraries like PyCrypto or OpenSSL.
+
+Authentication
+"Authentication verifies identity, like a password or fingerprint. It’s the first step in secure communication."
+Hands-On: Implement basic authentication in a web app using OAuth.
+
+Extra Words to Study
+Serialization
+"This is about converting objects into formats like JSON or XML for easy storage or transmission."
+Tip: Practice serializing and deserializing data in your language of choice.
+
+Garbage Collection
+"Garbage collection automatically frees up memory that’s no longer in use, so you don’t have to do it manually. Not all languages have it (like C)."
+Explore: Check how garbage collection works in Java or Python.
+
+Latency vs. Throughput
+"Latency is the delay in getting a response, like how long it takes for a web page to load. Throughput is how much data you can process in a given time."
+Activity: Compare them in networked systems you use.

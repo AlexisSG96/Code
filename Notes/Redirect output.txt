@@ -1,0 +1,58 @@
+1. Redirect stdout (Standard Output)
+The normal output of the program (e.g., from printf):
+./program > file.txt   # Redirect to file (overwrite)
+./program >> file.txt  # Redirect to file (append)
+
+2. Redirect stderr (Standard Error)
+Error messages or diagnostic outputs:
+./program 2> error.log   # Redirect to file (overwrite)
+./program 2>> error.log  # Redirect to file (append)
+
+3. Redirect Both stdout and stderr
+Combine both streams into one file:
+./program > output.log 2>&1  # Redirect both to file
+./program >> output.log 2>&1 # Append both to file
+Or redirect them separately:
+./program > out.log 2> error.log
+
+4. Redirect Input (stdin)
+Redirect input from a file:
+./program < input.txt
+
+5. Suppress Output
+If you don't want to save or see the output:
+Suppress stdout:
+./program > /dev/null
+Suppress stderr:
+./program 2> /dev/null
+Suppress both:
+./program > /dev/null 2>&1
+
+6. Redirect Specific File Descriptors
+Programs can use other file descriptors (3 and above) for specific purposes:
+Example: Redirect file descriptor 3:
+./program 3> fd3.log
+
+7. Redirect to Multiple Places
+Send output to multiple destinations:
+Using tee to write to a file and display in the terminal:
+./program | tee output.log
+For both stdout and stderr:
+./program 2>&1 | tee output.log
+
+8. Redirect to a Pipeline
+Send output directly to another command for processing:
+./program | grep "pattern"  # Process stdout
+./program 2>&1 | grep "pattern"  # Process both stdout and stderr
+
+9. Redirect to a Network Socket
+Redirect output to a network connection using /dev/tcp:
+echo "Hello" > /dev/tcp/localhost/8080
+
+10. Combine Redirection with Background Execution
+Run a program in the background and redirect all streams:
+./program > out.log 2> err.log &
+Tips:
+Order Matters: Always redirect stdout first (with > or >>) before redirecting stderr (2>&1).
+Nohup: Use nohup to ignore hangups and log output:
+nohup ./program > output.log 2>&1 &
